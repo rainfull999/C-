@@ -1,33 +1,32 @@
-/* Èı×ÓÆå.h */
-/* Í·ÎÄ¼şÌá¹©ÉùÃ÷ */
+/* ä¸‰å­æ£‹.h */
+/* å¤´æ–‡ä»¶æä¾›å£°æ˜ */
 #include <stdio.h>
-#include <ctype.h> /* Ìá¹©isdigitº¯Êı */
-#include <stdlib.h> /* Ìá¹©Ëæ»úº¯Êı */ 
-#include <time.h> /* Ìá¹©Ê±¼äº¯Êı */
+#include <stdlib.h> /* æä¾›éšæœºå‡½æ•° */ 
+#include <time.h> /* æä¾›æ—¶é—´å‡½æ•° */
 
 #define ROWS 3
 #define COLS 3
 
-/* Ìá¹©²Ëµ¥ */
+/* æä¾›èœå• */
 void Menu(void);
 
-/* ÓÎÏ·Âß¼­ */
+/* æ¸¸æˆé€»è¾‘ */
 void Game(void); 
 
-/* ³õÊ¼»¯ÆåÅÌ */
+/* åˆå§‹åŒ–æ£‹ç›˜ */
 void Initial_Board(char board[][COLS], int rows, int cols);
 
-/* ´òÓ¡ÆåÅÌ */
+/* æ‰“å°æ£‹ç›˜ */
 void Display_Board(char board[][COLS], int rows, int cols);
 
-/* Íæ¼Ò×ßÒ»²½ */
+/* ç©å®¶èµ°ä¸€æ­¥ */
 void Player_Move(char board[][COLS], int rows, int cols);
 
-/* µçÄÔ×ßÒ»²½ */
+/* ç”µè„‘èµ°ä¸€æ­¥ */
 void Computer_Move(char board[][COLS], int rows, int cols);
 
-/* ÅĞ¶ÏÊäÓ® */
+/* åˆ¤æ–­è¾“èµ¢ */
 int Is_Win(char board[][COLS], int rows, int cols);
 
-/* ÅĞ¶ÏÆåÅÌÊÇ·ñÂúÁË */
+/* åˆ¤æ–­æ£‹ç›˜æ˜¯å¦æ»¡äº† */
 int Is_Full(char board[][COLS], int rows, int cols);
